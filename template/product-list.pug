@@ -118,14 +118,14 @@ block main
                 price: '6.500.000 VND'
               },
               {
-                image: 'assets/images/pet-8.jpg',
+                image: 'assets/images/pet-7.jpg',
                 title: 'MO512 - Poodle Tiny',
                 gender: 'Đực',
                 age: '02 tháng',
                 price: '5.000.000 VND'
               },
               {
-                image: 'assets/images/pet-8.jpg',
+                image: 'assets/images/pet-7.jpg',
                 title: 'MO512 - Poodle Tiny',
                 gender: 'Đực',
                 age: '02 tháng',
@@ -137,11 +137,11 @@ block main
             each pet in pets
               .section-2__item.section-2__item--three
                 .section-2__image
-                  a(href="#")
+                  a(href="product-detail.html")
                     img(src=pet.image alt=pet.title)
                 .section-2__content
                   h3.section-2__title
-                    a(href="#") #{pet.title}
+                    a(href="product-detail.html") #{pet.title}
                   .section-2__info
                     .section-2__info-item Giống: <span>#{pet.gender}</span>
                     .section-2__info-item Tuổi: <span>#{pet.age}</span>

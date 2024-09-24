@@ -531,6 +531,7 @@ a {
   justify-content: space-between;
   border-radius: 20px;
   padding-top: 36px;
+  overflow: hidden;
 }
 .section-3__image {
   width: 42%;
@@ -704,6 +705,42 @@ a {
 }
 
 /* End Section 4 */
+.section-5__item img {
+  width: 100%;
+  aspect-ratio: 248/340;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.section-5 .swiper-wrapper {
+  padding-bottom: 40px;
+}
+.section-5 .swiper-pagination-bullet-active {
+  background-color: #003459;
+}
+.section-5 .swiper-slide {
+  width: 32%;
+}
+.section-5 .swiper-button-next, .section-5 .swiper-button-prev {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+}
+.section-5 .swiper-button-next::after, .section-5 .swiper-button-prev::after {
+  font-size: 18px;
+  font-weight: 900;
+  color: white;
+}
+.section-5 .swiper-button-next:hover, .section-5 .swiper-button-prev:hover {
+  background-color: #FFFFFF;
+}
+.section-5 .swiper-button-next:hover::after, .section-5 .swiper-button-prev:hover::after {
+  color: red;
+}
+
 /* Footer */
 .footer {
   border-radius: 40px 40px 0px 0px;
@@ -1077,18 +1114,42 @@ a {
   aspect-ratio: 560/476;
   object-fit: cover;
 }
+.product-info__images-main .swiper-button-next, .product-info__images-main .swiper-button-prev {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+}
+.product-info__images-main .swiper-button-next::after, .product-info__images-main .swiper-button-prev::after {
+  font-size: 18px;
+  font-weight: 900;
+  color: white;
+}
+.product-info__images-main .swiper-button-next:hover, .product-info__images-main .swiper-button-prev:hover {
+  background-color: #FFFFFF;
+}
+.product-info__images-main .swiper-button-next:hover::after, .product-info__images-main .swiper-button-prev:hover::after {
+  color: red;
+}
 .product-info__images-thumb {
   display: flex;
 }
 .product-info__images-thumb img {
-  width: calc(20% - 9.6px);
+  width: 100%;
   margin-right: 12px;
   aspect-ratio: 1/1;
   object-fit: cover;
   border-radius: 6px;
+  border: 2px solid transparent;
 }
-.product-info__images-thumb img:last-child {
-  margin-right: 0;
+.product-info__images-thumb .swiper-slide-thumb-active img {
+  border: 2px solid red;
+}
+.product-info__images-thumb .swiper-slide {
+  width: 17%;
 }
 .product-info__title {
   font-size: 24px;

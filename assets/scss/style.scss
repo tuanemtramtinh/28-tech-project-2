@@ -618,6 +618,7 @@ a {
     justify-content: space-between;
     border-radius: 20px;
     padding-top: 36px;
+    overflow: hidden;
   }
 
   &__image {
@@ -822,6 +823,61 @@ a {
   }
 }
 /* End Section 4 */
+
+//Section-5
+
+.section-5{
+
+  &__item{
+    img{
+      width: 100%;
+      aspect-ratio: 248/340;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+  }
+
+  .swiper-wrapper{
+    padding-bottom: 40px;
+  }
+
+  .swiper-pagination-bullet-active{
+    background-color: $color-primary;
+  }
+
+  .swiper-slide{
+    width: 32%;
+  }
+
+  .swiper-button-next, .swiper-button-prev{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    background-color: #FFFFFF66;
+    border-radius: 50%;
+    // font-size: 20px;
+    
+    &::after{
+      font-size: 18px;
+      font-weight: 900;
+      color: white;
+    }
+
+    &:hover{
+      background-color: #FFFFFF;
+
+      &::after{
+        color: red;
+      }
+    }
+  }
+
+  
+}
+
+//End Section-5
 
 /* Footer */
 .footer {
@@ -1292,22 +1348,55 @@ a {
       aspect-ratio: 560/476;
       object-fit: cover;
     }
+
+    .swiper-button-next, .swiper-button-prev{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 42px;
+      height: 42px;
+      background-color: #FFFFFF66;
+      border-radius: 50%;
+      // font-size: 20px;
+      
+      &::after{
+        font-size: 18px;
+        font-weight: 900;
+        color: white;
+      }
+
+      &:hover{
+        background-color: #FFFFFF;
+
+        &::after{
+          color: red;
+        }
+      }
+    }
   }
 
   &__images-thumb {
     display: flex;
 
     img {
-      width: calc(100%/5 - 48px/5);
+      // width: calc(100%/5 - 48px/5);
+      width: 100%;
       margin-right: 12px;
       aspect-ratio: 1/1;
       object-fit: cover;
       border-radius: 6px;
-
-      &:last-child {
-        margin-right: 0;
-      }
+      border: 2px solid transparent;
     }
+
+    .swiper-slide-thumb-active img{
+      border: 2px solid red;
+    }
+
+    .swiper-slide{
+      width: 17%;
+    }
+
+    
   }
 
   &__title {

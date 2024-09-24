@@ -2,7 +2,9 @@
 <html>
   <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css"><link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.6/viewer.css" rel="stylesheet">
     <title>Chi tiết sản phẩm</title>
   </head>
   <body>
@@ -10,11 +12,11 @@
       <div class="container">
         <div class="header__wrap">
           <button class="header__button-menu"><i class="fa-solid fa-bars"></i></button>
-          <div class="header__logo"><a href="/"><img src="assets/images/logo.svg" alt="Monito"></a></div>
+          <div class="header__logo"><a href="index.html"><img src="assets/images/logo.svg" alt="Monito"></a></div>
           <nav class="header__menu">
             <ul>
-              <li><a href="/">Trang Chủ</a></li>
-              <li><a href="#">Danh Mục</a></li>
+              <li><a href="index.html">Trang Chủ</a></li>
+              <li><a href="product-list.html">Danh Mục</a></li>
               <li><a href="#">Giới Thiệu</a></li>
               <li><a href="#">Liên Hệ</a></li>
             </ul>
@@ -33,8 +35,36 @@
       <div class="container">
         <div class="product-info__wrap">
           <div class="product-info__left">
-            <div class="product-info__images-main"><img src="assets/images/pet-3.jpg"></div>
-            <div class="product-info__images-thumb"><img src="assets/images/pet-3.jpg"><img src="assets/images/pet-4.jpg"><img src="assets/images/pet-5.jpg"><img src="assets/images/pet-6.jpg"><img src="assets/images/pet-7.jpg"></div>
+            <div class="product-info__images-main">
+              <div class="swiper swiper-slider-main" id="viewerProductInfo">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="assets/images/pet-3.jpg"></div>
+                  <div class="swiper-slide"><img src="assets/images/pet-4.jpg"></div>
+                  <div class="swiper-slide"><img src="assets/images/pet-5.jpg"></div>
+                  <div class="swiper-slide"><img src="assets/images/pet-6.jpg"></div>
+                  <div class="swiper-slide"><img src="assets/images/pet-7.jpg"></div>
+                  <div class="swiper-slide"><img src="assets/images/pet-4.jpg"></div>
+                  <div class="swiper-slide"><img src="assets/images/pet-5.jpg"></div>
+                  <div class="swiper-slide"><img src="assets/images/pet-6.jpg"></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
+            <div class="product-info__images-thumb">
+              <div class="swiper swiper-slider-thumb">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="assets/images/pet-3.jpg"></div>
+                  <div class="swiper-slide"><img src="assets/images/pet-4.jpg"></div>
+                  <div class="swiper-slide"><img src="assets/images/pet-5.jpg"></div>
+                  <div class="swiper-slide"><img src="assets/images/pet-6.jpg"></div>
+                  <div class="swiper-slide"><img src="assets/images/pet-7.jpg"></div>
+                  <div class="swiper-slide"><img src="assets/images/pet-4.jpg"></div>
+                  <div class="swiper-slide"><img src="assets/images/pet-5.jpg"></div>
+                  <div class="swiper-slide"><img src="assets/images/pet-6.jpg"></div>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="product-info__right">
             <div class="breadcrumb">
@@ -88,6 +118,34 @@
               </ul>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+    <div class="section-5">
+      <div class="container">
+        <div class="box-head">
+          <div class="box-head__left">
+            <div class="box-head__title">Khách hàng của chúng tôi</div>
+          </div>
+        </div>
+        <div class="swiper swiperSection5" id="viewerSection5">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="section-5__item"><img src="assets/images/banner-1.jpg" alt=""></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="section-5__item"><img src="assets/images/banner-2.jpg" alt=""></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="section-5__item"><img src="assets/images/banner-3.jpg" alt=""></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="section-5__item"><img src="assets/images/banner-4.jpg" alt=""></div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
         </div>
       </div>
     </div>
@@ -186,5 +244,8 @@
         </div>
       </div>
     </footer>
-  </body>
+  </body><script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.6/viewer.js"></script>
+  <script src="assets/js/script.js"> </script>
 </html>

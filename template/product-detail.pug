@@ -10,13 +10,45 @@ block main
       .product-info__wrap
         .product-info__left
           .product-info__images-main
-            img(src="assets/images/pet-3.jpg")
+            div(class='swiper swiper-slider-main' id='viewerProductInfo')
+              div(class='swiper-wrapper')
+                div(class='swiper-slide')
+                  img(src="assets/images/pet-3.jpg")
+                div(class='swiper-slide')
+                  img(src="assets/images/pet-4.jpg")
+                div(class='swiper-slide')
+                  img(src="assets/images/pet-5.jpg")
+                div(class='swiper-slide')
+                  img(src="assets/images/pet-6.jpg")
+                div(class='swiper-slide')
+                  img(src="assets/images/pet-7.jpg")
+                div(class='swiper-slide')
+                  img(src="assets/images/pet-4.jpg")
+                div(class='swiper-slide')
+                  img(src="assets/images/pet-5.jpg")
+                div(class='swiper-slide')
+                  img(src="assets/images/pet-6.jpg")
+              div(class='swiper-button-next')
+              div(class='swiper-button-prev')
           .product-info__images-thumb
-            img(src="assets/images/pet-3.jpg")
-            img(src="assets/images/pet-4.jpg")
-            img(src="assets/images/pet-5.jpg")
-            img(src="assets/images/pet-6.jpg")
-            img(src="assets/images/pet-7.jpg")
+            div(class='swiper swiper-slider-thumb')
+              div(class='swiper-wrapper')
+                div(class='swiper-slide')
+                  img(src="assets/images/pet-3.jpg")
+                div(class='swiper-slide')
+                  img(src="assets/images/pet-4.jpg")
+                div(class='swiper-slide')
+                  img(src="assets/images/pet-5.jpg")
+                div(class='swiper-slide')
+                  img(src="assets/images/pet-6.jpg")
+                div(class='swiper-slide')
+                  img(src="assets/images/pet-7.jpg")
+                div(class='swiper-slide')
+                  img(src="assets/images/pet-4.jpg")
+                div(class='swiper-slide')
+                  img(src="assets/images/pet-5.jpg")
+                div(class='swiper-slide')
+                  img(src="assets/images/pet-6.jpg")
         .product-info__right
           //- Breadcrumb
           .breadcrumb
@@ -71,6 +103,32 @@ block main
               li.box-share__item
                 a(href="#" target="_blank" class="box-share__link") <i class="fa-brands fa-youtube"></i>
   //- End Product Info
+
+  //-Section 5
+  div(class='section-5')
+    div(class='container')
+      div(class='box-head')
+        div(class='box-head__left')
+          div(class='box-head__title') Khách hàng của chúng tôi
+
+      div(class='swiper swiperSection5' id="viewerSection5")
+        div(class='swiper-wrapper')
+          div(class='swiper-slide')
+            div(class='section-5__item')
+              img(src="assets/images/banner-1.jpg", alt="")
+          div(class='swiper-slide')
+            div(class='section-5__item')
+              img(src="assets/images/banner-2.jpg", alt="")
+          div(class='swiper-slide')
+            div(class='section-5__item')
+              img(src="assets/images/banner-3.jpg", alt="")
+          div(class='swiper-slide')
+            div(class='section-5__item')
+              img(src="assets/images/banner-4.jpg", alt="")
+        div(class='swiper-pagination')
+        div(class='swiper-button-next')
+        div(class='swiper-button-prev')
+  //-End Section 5
 
   //- Section 2
   .section-2
